@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--контейнер с серой рамкой-->
+    <div class="container-main">
+      <!--контейнер с черной рамкой и слайдами-->
+      <div class="container-black">
+        <!--слайд с меняющимся фоном-->
+        <div class="slide1-bg1"></div>
+        <div class="slide2-bg2"></div>
+        <div class="slide3-bg3"></div>
+        <div class="slide4-bg4"></div>
+      </div>
+      <!--блок с надписями и radiobuttons-->
+      <div class="underThePicture">
+        <div class="text">
+          <div class="text1"></div>
+          <div class="text2"></div>
+          <div class="text3"></div>
+          <div class="text4"></div>
+        </div>
+        <div class="bullits">
+          <div class="carousel">
+            <input
+              type="radio"
+              checked
+              id="slide1"
+              name="slides"
+              value="slide-1"
+            />
+            <label for="slide1" class="slide1 bul">Slide 1</label>
+            <input type="radio" id="slide2" name="slides" value="slide-2" />
+            <label for="slide2" class="slide-2 bul">Slide 2</label>
+            <input type="radio" id="slide3" name="slides" value="slide-3" />
+            <label for="slide3" class="slide3 bul">Slide 3</label>
+            <input type="radio" id="slide-4" name="slides" value="slide-4" />
+            <label for="slide4" class="slide4 bul">Slide 4</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
