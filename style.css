@@ -1,0 +1,86 @@
+.container-main {
+  max-width: 640px;
+  width: 90%;
+  height: 550px;
+  margin: 30px auto;
+  border: solid grey 2px;
+  background-color: #201f1f;
+}
+.container-black {
+  width: 90%;
+  height: 450px;
+  margin: 20px auto;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  box-sizing: border-box;
+  transition: left 0.5s ease-in-out;
+  height: 450px;
+}
+
+.container-black div {
+  height: 100%;
+  margin: 10px auto;
+  background-repeat: no-repeat;
+}
+.bullits {
+  margin: 10px 20px;
+}
+.slide1-bg1 {
+  background: url("one.gif");
+}
+.slide2-bg2 {
+  background: url("two.gif");
+}
+.slide3-bg3 {
+  background: url("three.gif");
+}
+
+.slide4-bg4 {
+  background: url("for.gif");
+}
+
+.carousel {
+  margin-top: -30px;
+}
+.text {
+  width: 100px;
+  height: fit-content;
+}
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+:checked + .bul {
+  background: transparent;
+  border: 3px solid #7e7ee0;
+}
+.slide2:checked ~ .slide1-bg1 {
+  background: url("two.gif");
+}
+
+.bul {
+  cursor: pointer;
+  text-indent: -99999px;
+  overflow: hidden;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #7e7ee0;
+  border: 3px solid #7e7ee0;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 100;
+  margin-right: 15px;
+}
+.bul:hover {
+  border-color: white;
+  background: white;
+}
+.underThePicture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
