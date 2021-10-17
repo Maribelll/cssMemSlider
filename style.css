@@ -1,11 +1,12 @@
 html,
 body {
   overflow: hidden;
+  min-width: 320px;
 }
 .container-main {
-  max-width: 740px;
+  max-width: 50rem;
   width: 90%;
-  height: 700px;
+  height: 45rem;
   margin: 30px auto;
   border: solid grey 2px;
   background-color: #201f1f;
@@ -16,14 +17,12 @@ h1 {
 }
 .container-black {
   width: 90%;
-  height: 600px;
   margin: 20px auto;
   overflow: hidden;
   margin: 20px auto;
   padding: 0;
   box-sizing: border-box;
   transition: left 1s ease-in-out;
-  height: 450px;
 }
 
 body input {
@@ -191,24 +190,22 @@ body input {
   .underThePicture {
     flex-direction: column-reverse;
     margin-top: 3rem;
+    margin-left: 20px;
   }
   .slide-img {
     height: auto;
   }
-  .text-container-black {
-    margin-left: 10%;
-  }
+
   .text {
     font-size: 1.8em;
   }
+  .inner-text__wrapper {
+    margin-left: 0;
+    margin-left: 12rem;
 }
+
 @media (max-width: 660px) {
   .inner-text__wrapper {
-    margin-left: 100px;
-  }
-}
-@media (max-width: 660px) {
-  .inner-text__wrapper {
-    margin-left: 170px;
+    margin-left: 12rem;
   }
 }
