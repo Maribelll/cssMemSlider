@@ -1,0 +1,211 @@
+html,
+body {
+  overflow: hidden;
+  min-width: 320px;
+}
+.container-main {
+  max-width: 50rem;
+  width: 90%;
+  height: 45rem;
+  margin: 30px auto;
+  border: solid grey 2px;
+  background-color: #201f1f;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.container-black {
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+  margin: 20px auto;
+  padding: 0;
+  box-sizing: border-box;
+  transition: left 1s ease-in-out;
+}
+
+body input {
+  display: none;
+}
+
+.underThePicture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.5rem;
+  margin-right: 20px;
+}
+
+.bul {
+  cursor: pointer;
+  text-indent: -99999px;
+  overflow: hidden;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #7e7ee0;
+  border: 3px solid #7e7ee0;
+  box-sizing: border-box;
+  border-radius: 100%;
+  z-index: 100;
+  margin-right: 15px;
+}
+.bul:hover {
+  border-color: white;
+  background: white;
+}
+
+.inner-container-black {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slide {
+  width: 20%;
+  transition: 0.2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#s1:checked ~ .container-main .container-black .inner-container-black .s1,
+#s1:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: 0;
+}
+
+#s2:checked ~ .container-main .container-black .inner-container-black .s1,
+#s2:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: -20%;
+}
+#s3:checked ~ .container-main .container-black .inner-container-black .s1,
+#s3:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: -40%;
+}
+#s4:checked ~ .container-main .container-black .inner-container-black .s1,
+#s4:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: -60%;
+}
+
+#s1:checked ~ .container-main .carousel .b1,
+#s2:checked ~ .container-main .carousel .b2,
+#s3:checked ~ .container-main .carousel .b3,
+#s4:checked ~ .container-main .carousel .b4 {
+  background: lightblue;
+}
+/* text slider */
+
+.text-container-black {
+  width: 40rem;
+  overflow: hidden;
+}
+
+.inner-text__wrapper {
+  width: 500%;
+  height: 100%;
+  display: flex;
+  margin-left: 40px;
+}
+.text {
+  color: white;
+  width: 20%;
+  transition: 0.2s;
+  font-size: 28px;
+}
+
+#slide1:checked ~ .container-main .container-black .slide1-bg1 .s1,
+#slide1:checked ~ .container-main .underThePicture .text .text1 {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .container-main .container-black .inner-slider__wrapper .s1,
+#slide2:checked
+  ~ .container-main
+  .control-block__wrapper
+  .mem-slider__wrapper
+  .inner-mem__wrapper
+  .m1 {
+  margin-left: -20%;
+}
+#slide3:checked ~ .container-main .container-black .inner-slider__wrapper .s1,
+#slide3:checked
+  ~ .container-main
+  .control-block__wrapper
+  .mem-slider__wrapper
+  .inner-mem__wrapper
+  .m1 {
+  margin-left: -40%;
+}
+#slide4:checked ~ .container .container-black .inner-slider__wrapper .s1,
+#slide4:checked
+  ~ .container
+  .control-block__wrapper
+  .mem-slider__wrapper
+  .inner-mem__wrapper
+  .m1 {
+  margin-left: -60%;
+}
+
+#slide1:checked ~ .container-main .carousel .b1,
+#slide2:checked ~ .container-main .carousel .b2,
+#slide3:checked ~ .container-main .carousel .b3,
+#slide4:checked ~ .container-main .carousel .b4 {
+  background: lightblue;
+}
+
+@media (max-width: 850px) {
+  .container-black,
+  .container-main {
+    height: auto;
+  }
+  .underThePicture {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    margin-left: 20px;
+  }
+  .slide-img {
+    height: auto;
+  }
+
+  .text {
+    font-size: 1.8em;
+  }
+  .inner-text__wrapper {
+    margin-left: 0;
+    margin-left: 12rem;
+}
+
+@media (max-width: 660px) {
+  .inner-text__wrapper {
+    margin-left: 12rem;
+  }
+}
