@@ -1,44 +1,43 @@
 .container-main {
-  max-width: 640px;
+  max-width: 740px;
   width: 90%;
-  height: 550px;
+  height: 700px;
   margin: 30px auto;
   border: solid grey 2px;
   background-color: #201f1f;
+  color: white;
+}
+h1 {
+  text-align: center;
 }
 .container-black {
   width: 90%;
-  height: 450px;
+  height: 600px;
   margin: 20px auto;
   overflow: hidden;
   margin: 20px auto;
   padding: 0;
   box-sizing: border-box;
-  transition: left 0.5s ease-in-out;
+  transition: left 1s ease-in-out;
   height: 450px;
 }
 
-.container-black div {
-  height: 100%;
-  margin: 10px auto;
-  background-repeat: no-repeat;
-}
-img {
-  border-radius: 5px;
+body input {
+  display: none;
 }
 
-.text {
-  width: 100px;
-  height: fit-content;
+.underThePicture {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
 }
-input[type="radio"] {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-:checked + .bul {
-  background: transparent;
-  border: 3px solid #7e7ee0;
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  margin-left: 1.5rem;
+  margin-right: 20px;
 }
 
 .bul {
@@ -59,20 +58,85 @@ input[type="radio"] {
   border-color: white;
   background: white;
 }
-.underThePicture {
+
+.inner-container-black {
+  width: 500%;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 35rem;
-  height: 8rem;
+}
+.slide {
+  width: 20%;
+  transition: 0.2s;
 }
 
-.carousel {
+.slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+#s1:checked ~ .container-main .container-black .inner-container-black .s1,
+#s1:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: 0;
+}
+
+#s2:checked ~ .container-main .container-black .inner-container-black .s1,
+#s2:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: -20%;
+}
+#s3:checked ~ .container-main .container-black .inner-container-black .s1,
+#s3:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: -40%;
+}
+#s4:checked ~ .container-main .container-black .inner-container-black .s1,
+#s4:checked
+  ~ .container-main
+  .underThePicture
+  .text-container-black
+  .inner-text__wrapper
+  .m1 {
+  margin-left: -60%;
+}
+
+#s1:checked ~ .container-main .carousel .b1,
+#s2:checked ~ .container-main .carousel .b2,
+#s3:checked ~ .container-main .carousel .b3,
+#s4:checked ~ .container-main .carousel .b4 {
+  background: lightblue;
+}
+/* text slider */
+
+.text-container-black {
+  width: 40rem;
+  overflow: hidden;
+}
+
+.inner-text__wrapper {
+  width: 500%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  margin-left: 1.5rem;
-  margin-top: -30px;
-  margin-right: 20px;
+  margin-left: 40px;
+}
+.text {
+  color: white;
+  width: 20%;
+  transition: 0.2s;
+  font-size: 28px;
 }
 
 #slide1:checked ~ .container-main .container-black .slide1-bg1 .s1,
