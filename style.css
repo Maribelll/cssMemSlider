@@ -1,3 +1,7 @@
+html,
+body {
+  overflow: hidden;
+}
 .container-main {
   max-width: 740px;
   width: 90%;
@@ -177,4 +181,34 @@ body input {
 #slide3:checked ~ .container-main .carousel .b3,
 #slide4:checked ~ .container-main .carousel .b4 {
   background: lightblue;
+}
+
+@media (max-width: 850px) {
+  .container-black,
+  .container-main {
+    height: auto;
+  }
+  .underThePicture {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+  }
+  .slide-img {
+    height: auto;
+  }
+  .text-container-black {
+    margin-left: 10%;
+  }
+  .text {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 660px) {
+  .inner-text__wrapper {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 660px) {
+  .inner-text__wrapper {
+    margin-left: 170px;
+  }
 }
